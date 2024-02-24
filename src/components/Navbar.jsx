@@ -12,17 +12,17 @@ export default function Navbar() {
       </div>
 
       <div className="flex-grow text-center hidden sm:block">
-        <ul class="flex justify-center space-x-7 font-bold gap-6">
-          <li>
+        <ul className="flex justify-center space-x-7 font-bold gap-6">
+          <li key='intro'>
             <a href="#intro" className="text-white hover-nav">Inicio</a>
           </li>
-          <li>
+          <li key='vantagens '>
             <a href="#vantagens" className="text-white hover-nav">Vantagens</a>
           </li>
-          <li>
+          <li key='produtos'>
             <a href="#produtos" className="text-white hover-nav">Produtos</a>
           </li>
-          <li>
+          <li key='FAQ'>
             <a href="#FAQ" className="text-white hover-nav">FAQ</a>
           </li>
         </ul>

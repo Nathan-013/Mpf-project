@@ -13,6 +13,7 @@ export default function Intro() {
           h-[230px] w-[330px]
           xl:h-[400px] xl:w-[600px]
         `}
+        alt="grafico trader"
         src='/images/grafico5.png' 
         width={650} 
         height={400}
