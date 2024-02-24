@@ -2,32 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::-webkit-scrollbar {
+  width: 4px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Cor de fundo da barra */
+::-webkit-scrollbar-track {
+  background-color: #1c1f01;
+}
+
+/* Cor da barra */
+::-webkit-scrollbar-thumb {
+  background-color: #ECB907;
+}
+
+/* Hover na barra */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(48, 51, 5);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #0e0d0d;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.hover-nav {
+  @apply hover:text-amber-300 py-2 px-4 hover:border-amber-500 hover:ring-2 hover:ring-amber-400 hover:rounded-sm;
+}
+
+.shadow-text {
+  text-shadow: 20px 15px 5px rgba(12, 12, 12, 0.788);
+}
+
+.AccordionChevron {
+  transition: transform 300ms;
+}
+
+.AccordionTrigger[data-state='open'] > .AccordionChevron {
+  transform: rotate(90deg);
+}
+
+
+/* styles.css */
+.AccordionContent {
+  overflow: hidden;
+}
+
+.AccordionContent[data-state='open'] {
+  animation: slideDown 300ms ease-out;
+}
+
+.AccordionContent[data-state='closed'] {
+  animation: slideUp 300ms ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+
+  to {
+    height: 0;
   }
 }
