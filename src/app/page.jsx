@@ -13,9 +13,9 @@ export default function Home() {
       `}>
         <Navbar/>
         <Intro id='intro'/>
-        <Info/>
-        <Products/>
-        <Faq/>
+        <Info id='vantagens'/>
+        <Products />
+        <Faq id='FAQ'/>
         <Footer/>
       </div>
       

@@ -16,7 +16,7 @@ export default function Navbar() {
           <li key='intro'>
             <a href="#intro" className="text-white hover-nav">Inicio</a>
           </li>
-          <li key='vantagens '>
+          <li key='vantagens'>
             <a href="#vantagens" className="text-white hover-nav">Vantagens</a>
           </li>
           <li key='produtos'>

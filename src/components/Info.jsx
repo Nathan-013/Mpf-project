@@ -104,7 +104,7 @@ export default function Intro() {
 
       <div className="flex justify-center mt-16 mb-12 text-center font-bold text-white">
         <a href="#produtos" className="bg-yellow-500 border w-72 border-yellow-800 rounded-lg p-5 hover:bg-opacity-90">
-          O MPF É PRA MIM!
+          O MFP É PRA MIM!
         </a>
       </div>
 

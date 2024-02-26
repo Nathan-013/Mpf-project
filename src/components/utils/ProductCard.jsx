@@ -4,7 +4,7 @@ export function ProductCard({ item }) {
   return (
     <div className={`
       h-full bg-neutral-900 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-700
-      w-[320px] p-4 ${item.highlight ? 'ring-4 ring-amber-400' : ' '}
+      w-[320px] p-4 ${item.highlight ? 'ring-4 ring-amber-400 border-0' : ' '}
     `}>
 
       <div className="text-white font-bold">
@@ -22,7 +22,7 @@ export function ProductCard({ item }) {
       <div className="text-white text-sm font-extralight mt-5">
         {item.desc.map(desc => {
           return (
-            <div key={item.id} className="flex gap-5 mb-4 p-1">
+            <div className="flex gap-5 mb-4 p-1">
               <CheckCircle size={42} color="#8F7105" strokeWidth={2.25}/>
               <p>
                 {desc}
