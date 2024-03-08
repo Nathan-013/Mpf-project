@@ -23,11 +23,9 @@ export function Products() {
           md:grid-cols-2 
           lg:grid-cols-3 lg:gap-x-28 lg:gap-y-16 
         `}>
-          <ProductCard key={products[0].id} item={products[0]} />
+          <ProductCard key={products[0].id} item={products[0]}/>
           <ProductCard key={products[1].id} item={products[1]}/>
           <ProductCard key={products[2].id} item={products[2]}/>
-          <div className='hidden lg:block'/>
-          <ProductCard key={products[3].id} item={products[3]}/>
           
           {/* {products.map(product => {
             return <ProductCard key={product.id} item={product}/>

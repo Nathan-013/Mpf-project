@@ -19,12 +19,12 @@ export function ProductCard({ item }) {
         }
       </div>
 
-      <div className="text-white text-sm font-extralight mt-5">
+      <div className="text-white mt-5">
         {item.desc.map((desc, i) => {
           return (
             <div key={i} className="flex gap-5 mb-4 p-1">
-              <CheckCircle size={42} color="#8F7105" strokeWidth={2.25}/>
-              <p>
+              <CheckCircle color="#8F7105" size={36}/>
+              <p className='text-sm font-extralight'>
                 {desc}
               </p>
             </div>
